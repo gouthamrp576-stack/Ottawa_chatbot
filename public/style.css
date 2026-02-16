@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap");
+
+:root {
+  --canada-red: #d80621;
+  --canada-red-deep: #a4041c;
+  --canada-ink: #252732;
+  --canada-cream: #fffaf3;
+  --canada-panel: rgba(255, 255, 255, 0.9);
+  --canada-line: rgba(164, 4, 28, 0.2);
+  --canada-shadow: 0 14px 38px rgba(80, 6, 21, 0.16);
+}
+
+[data-testid="stAppViewContainer"] {
+  background:
+    radial-gradient(circle at 9% 10%, rgba(216, 6, 33, 0.12), transparent 27%),
+    radial-gradient(circle at 88% 18%, rgba(164, 4, 28, 0.1), transparent 30%),
+    linear-gradient(135deg, #fffdf9 0%, var(--canada-cream) 100%);
+  color: var(--canada-ink);
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+[data-testid="stAppViewContainer"]::before {
+  content: "";
+  position: fixed;
+  inset: -25vmax;
+  background-image: url("__MAPLE_LEAF_DATA_URI__");
+  background-size: 120px 120px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  transform: rotate(-8deg);
+  animation: leafDrift 28s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes leafDrift {
+  from {
+    transform: translate3d(0, 0, 0) rotate(-8deg);
+  }
+  to {
+    transform: translate3d(-130px, -40px, 0) rotate(-8deg);
+  }
+}
+
+[data-testid="stHeader"] {
+  background: transparent;
+}
+
+[data-testid="stMainBlockContainer"] {
+  max-width: 920px;
+  position: relative;
+  z-index: 1;
+  padding-top: 1.2rem;
+}
+
+[data-testid="stSidebar"] {
+  border-right: 1px solid var(--canada-line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 248, 245, 0.94));
+}
+
+[data-testid="stSidebar"] * {
+  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--canada-red-deep) !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.canada-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0.8rem;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid var(--canada-line);
+  border-left: 7px solid var(--canada-red);
+  box-shadow: var(--canada-shadow);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.98), rgba(255, 245, 241, 0.92));
+}
+
+.canada-hero h1 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+}
+
+.canada-hero p {
+  margin: 0.2rem 0 0;
+  line-height: 1.45;
+}
+
+.canada-runtime {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.canada-hero-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 1.65rem;
+  background: linear-gradient(160deg, var(--canada-red), var(--canada-red-deep));
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(132, 8, 28, 0.28);
+}
+
+[data-testid="stChatMessage"] {
+  border-radius: 16px;
+  border: 1px solid var(--canada-line);
+  border-left: 4px solid var(--canada-red);
+  background: var(--canada-panel);
+  box-shadow: var(--canada-shadow);
+  margin-bottom: 0.75rem;
+  animation: bubbleFade 0.25s ease;
+}
+
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] {
+  padding-top: 0.1rem;
+}
+
+@keyframes bubbleFade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-testid="stChatInput"] {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--canada-line);
+  border-radius: 15px;
+}
+
+.stChatInputContainer button {
+  border-radius: 999px !important;
+  border: 1px solid transparent !important;
+  background: linear-gradient(160deg, var(--canada-red) 0%, var(--canada-red-deep) 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(124, 10, 29, 0.3) !important;
+}
+
+.stChatInputContainer button:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .canada-hero {
+    align-items: flex-start;
+  }
+
+  .canada-hero-mark {
+    width: 44px;
+    height: 44px;
+    font-size: 1.35rem;
+  }
+}
