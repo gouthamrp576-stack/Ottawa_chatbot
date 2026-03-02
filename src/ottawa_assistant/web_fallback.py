@@ -10,9 +10,9 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain_core.documents import Document
 from langchain_core.messages import BaseMessage
 
-from config import is_trusted_url, settings
-from model_factory import create_chat_model
-from prompts import build_qa_prompt
+from .config import is_trusted_url, settings
+from .model_factory import create_chat_model
+from .prompts import build_qa_prompt
 
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
 _STOPWORDS = {

@@ -20,8 +20,8 @@ ENV/
 .streamlit/secrets.toml
 
 # Local vector index artifacts
-retriever/index/*
-!retriever/index/.gitkeep
+src/ottawa_assistant/retriever/index/*
+!src/ottawa_assistant/retriever/index/.gitkeep
 
 # Build and packaging outputs
 build/

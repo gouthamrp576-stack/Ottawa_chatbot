@@ -16,18 +16,22 @@ If the local FAISS index is unavailable, it can automatically fall back to trust
 
 ```text
 .
-├── main.py                      # Streamlit chat app entrypoint
-├── prompts.py                   # Custom newcomer prompt templates
-├── rag_chain.py                 # LangChain conversational retrieval chain
-├── config.py                    # Environment settings + trusted domain list
-├── model_factory.py             # OpenAI/Ollama model + embedding factories
+├── src/
+│   └── ottawa_assistant/
+│       ├── __init__.py
+│       ├── main.py              # Streamlit app implementation
+│       ├── prompts.py           # Custom newcomer prompt templates
+│       ├── rag_chain.py         # LangChain conversational retrieval chain
+│       ├── config.py            # Environment settings + trusted domain list
+│       ├── model_factory.py     # OpenAI/Ollama model + embedding factories
+│       ├── web_fallback.py      # Trusted Google fallback answer flow
+│       └── retriever/
+│           ├── __init__.py
+│           ├── ingest.py        # Ingest web pages and PDFs
+│           ├── vector_store.py  # FAISS load/save helpers
+│           └── index/           # Persisted vector index + metadata
 ├── requirements.txt
 ├── .env.example
-├── retriever/
-│   ├── __init__.py
-│   ├── ingest.py                # Ingest web pages and PDFs
-│   ├── vector_store.py          # FAISS load/save helpers
-│   └── index/                   # Persisted vector index + metadata
 └── public/
     ├── maple-leaf.svg
     └── style.css
@@ -61,6 +65,11 @@ cp .env.example .env
 ```
 
 4. Configure model provider in `.env` (OpenAI or Ollama).
+5. Expose the `src` package path:
+
+```bash
+export PYTHONPATH="$PWD/src"
+```
 
 ## Model Provider Setup
 
@@ -115,13 +124,13 @@ Google fallback behavior:
 ### Option A: Ingest default trusted Ottawa/Ontario/Canada sources
 
 ```bash
-python -m retriever.ingest --use-seed
+python -m ottawa_assistant.retriever.ingest --use-seed
 ```
 
 ### Option B: Ingest specific trusted web pages
 
 ```bash
-python -m retriever.ingest --urls \
+python -m ottawa_assistant.retriever.ingest --urls \
   https://ottawa.ca/en/family-and-social-services/immigration-and-settlement \
   https://www.ontario.ca/page/apply-ohip-and-get-health-card
 ```
@@ -129,26 +138,26 @@ python -m retriever.ingest --urls \
 ### Option C: Ingest local PDFs
 
 ```bash
-python -m retriever.ingest --pdfs ./docs/newcomer-guide.pdf ./docs/tenant-rights.pdf
+python -m ottawa_assistant.retriever.ingest --pdfs ./docs/newcomer-guide.pdf ./docs/tenant-rights.pdf
 ```
 
 ### Option D: Combine web + PDFs
 
 ```bash
-python -m retriever.ingest --use-seed --pdfs ./docs/newcomer-guide.pdf
+python -m ottawa_assistant.retriever.ingest --use-seed --pdfs ./docs/newcomer-guide.pdf
 ```
 
 ## Run the Streamlit App
 
 ```bash
-python -m streamlit run main.py
+streamlit run src/ottawa_assistant/main.py
 ```
 
 Open the URL shown in terminal (usually [http://localhost:8501](http://localhost:8501)).
 
 ## Notes
 
-- The assistant only ingests trusted domains from `config.py`.
+- The assistant only ingests trusted domains from `src/ottawa_assistant/config.py`.
 - If no vector index exists, the app tells you to run ingestion first.
 - The interface is Canada-themed (`public/style.css`, `public/maple-leaf.svg`), with maple-leaf visual branding.
 - Runtime details (LLM, embeddings, retrieval top-k) are shown in the UI sidebar.

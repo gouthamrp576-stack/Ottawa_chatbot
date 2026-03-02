@@ -6,10 +6,10 @@ from typing import Iterable
 
 from langchain_core.documents import Document
 
-from config import settings, validate_settings
-from model_factory import create_chat_model
-from prompts import build_contextualize_prompt, build_qa_prompt
-from retriever.vector_store import create_retriever
+from .config import settings, validate_settings
+from .model_factory import create_chat_model
+from .prompts import build_contextualize_prompt, build_qa_prompt
+from .retriever.vector_store import create_retriever
 
 try:
     # LangChain 0.3.x style imports.

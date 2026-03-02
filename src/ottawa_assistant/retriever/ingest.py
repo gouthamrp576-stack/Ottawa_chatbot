@@ -2,16 +2,16 @@
 
 Examples:
 1) Use trusted seed websites:
-   python -m retriever.ingest --use-seed
+   python -m ottawa_assistant.retriever.ingest --use-seed
 
 2) Ingest specific web pages:
-   python -m retriever.ingest --urls https://ottawa.ca/... https://www.ontario.ca/...
+   python -m ottawa_assistant.retriever.ingest --urls https://ottawa.ca/... https://www.ontario.ca/...
 
 3) Ingest local PDFs:
-   python -m retriever.ingest --pdfs ./docs/guide1.pdf ./docs/guide2.pdf
+   python -m ottawa_assistant.retriever.ingest --pdfs ./docs/guide1.pdf ./docs/guide2.pdf
 
 4) Mix web and PDF sources:
-   python -m retriever.ingest --use-seed --pdfs ./docs/newcomer_guide.pdf
+   python -m ottawa_assistant.retriever.ingest --use-seed --pdfs ./docs/newcomer_guide.pdf
 """
 
 from __future__ import annotations
@@ -23,8 +23,8 @@ from langchain_community.document_loaders import PyPDFLoader, WebBaseLoader
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from config import is_trusted_url, settings, validate_settings
-from retriever.vector_store import save_vector_store
+from ..config import is_trusted_url, settings, validate_settings
+from .vector_store import save_vector_store
 
 
 def _dedupe_preserve_order(items: list[str]) -> list[str]:

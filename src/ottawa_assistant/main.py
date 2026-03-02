@@ -1,7 +1,7 @@
 """Streamlit entrypoint for Ottawa Newcomer Assistant.
 
 Run:
-    streamlit run main.py
+    PYTHONPATH=src streamlit run src/ottawa_assistant/main.py
 """
 
 from __future__ import annotations
@@ -12,12 +12,12 @@ from pathlib import Path
 import streamlit as st
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 
-from config import settings, validate_settings
-from model_factory import runtime_summary
-from rag_chain import build_rag_chain, format_sources
-from web_fallback import answer_with_google_fallback
+from ottawa_assistant.config import settings, validate_settings
+from ottawa_assistant.model_factory import runtime_summary
+from ottawa_assistant.rag_chain import build_rag_chain, format_sources
+from ottawa_assistant.web_fallback import answer_with_google_fallback
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_ASSISTANT_MESSAGE = (
     "Welcome to Ottawa. Ask me anything about housing, healthcare, "
     "transportation, or newcomer services."

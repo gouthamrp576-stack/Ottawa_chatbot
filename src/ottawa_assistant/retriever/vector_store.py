@@ -9,8 +9,8 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from langchain_core.retrievers import BaseRetriever
 
-from config import settings
-from model_factory import create_embeddings, embedding_signature
+from ..config import settings
+from ..model_factory import create_embeddings, embedding_signature
 
 INDEX_METADATA_FILE = "index_metadata.json"
 

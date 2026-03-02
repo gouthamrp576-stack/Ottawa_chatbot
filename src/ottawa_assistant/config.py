@@ -9,7 +9,7 @@ import os
 
 from dotenv import load_dotenv
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(PROJECT_ROOT / ".env")
 
 
@@ -59,7 +59,7 @@ class Settings:
 
     vector_store_dir: Path = _resolve_path(
         os.getenv("VECTOR_STORE_DIR", ""),
-        "retriever/index",
+        "src/ottawa_assistant/retriever/index",
     )
     retrieval_k: int = _env_int("RETRIEVAL_K", 6)
     allow_embedding_mismatch: bool = _env_bool("ALLOW_EMBEDDING_MISMATCH", False)

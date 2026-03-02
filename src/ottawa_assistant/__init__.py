@@ -1,0 +1,2 @@
+"""Ottawa assistant package."""
+

@@ -5,7 +5,7 @@ from __future__ import annotations
 from langchain_core.embeddings import Embeddings
 from langchain_core.language_models.chat_models import BaseChatModel
 
-from config import settings, validate_settings
+from .config import settings, validate_settings
 
 
 def create_chat_model(temperature: float = 0.15) -> BaseChatModel:
