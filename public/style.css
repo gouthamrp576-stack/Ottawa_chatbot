@@ -1,173 +1,298 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap");
 
 :root {
-  --canada-red: #d80621;
-  --canada-red-deep: #a4041c;
-  --canada-ink: #252732;
-  --canada-cream: #fffaf3;
-  --canada-panel: rgba(255, 255, 255, 0.9);
-  --canada-line: rgba(164, 4, 28, 0.2);
-  --canada-shadow: 0 14px 38px rgba(80, 6, 21, 0.16);
+  --bg-top: #edf3fb;
+  --bg-main: #f5f8fc;
+  --ink-900: #1a335b;
+  --ink-700: #2f4667;
+  --ink-500: #6782a5;
+  --line: #d7e2ef;
+  --panel: #ffffff;
+  --panel-soft: #f8fbff;
+  --green-500: #35a382;
+  --green-600: #288a6d;
+  --green-soft: #d9f1e8;
+  --blue-500: #4a90cc;
+  --blue-600: #3178b7;
+  --chip: #eef4fb;
+  --shadow-lg: 0 16px 34px rgba(31, 70, 117, 0.12);
+  --shadow-md: 0 10px 24px rgba(31, 70, 117, 0.09);
 }
 
 [data-testid="stAppViewContainer"] {
-  background:
-    radial-gradient(circle at 9% 10%, rgba(216, 6, 33, 0.12), transparent 27%),
-    radial-gradient(circle at 88% 18%, rgba(164, 4, 28, 0.1), transparent 30%),
-    linear-gradient(135deg, #fffdf9 0%, var(--canada-cream) 100%);
-  color: var(--canada-ink);
-  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
-}
-
-[data-testid="stAppViewContainer"]::before {
-  content: "";
-  position: fixed;
-  inset: -25vmax;
-  background-image: url("__MAPLE_LEAF_DATA_URI__");
-  background-size: 120px 120px;
-  background-repeat: repeat;
-  opacity: 0.05;
-  transform: rotate(-8deg);
-  animation: leafDrift 28s linear infinite;
-  pointer-events: none;
-  z-index: 0;
-}
-
-@keyframes leafDrift {
-  from {
-    transform: translate3d(0, 0, 0) rotate(-8deg);
-  }
-  to {
-    transform: translate3d(-130px, -40px, 0) rotate(-8deg);
-  }
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-main) 72%);
+  color: var(--ink-700);
+  font-family: "Nunito Sans", "Segoe UI", sans-serif;
 }
 
 [data-testid="stHeader"] {
   background: transparent;
 }
 
-[data-testid="stMainBlockContainer"] {
-  max-width: 920px;
-  position: relative;
-  z-index: 1;
-  padding-top: 1.2rem;
-}
-
 [data-testid="stSidebar"] {
-  border-right: 1px solid var(--canada-line);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 248, 245, 0.94));
+  display: none;
 }
 
-[data-testid="stSidebar"] * {
-  font-family: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+[data-testid="stMainBlockContainer"] {
+  max-width: 1280px;
+  padding-top: 0.9rem;
+  padding-bottom: 1.4rem;
 }
 
 h1,
 h2,
-h3 {
-  font-family: "Playfair Display", Georgia, serif;
-  letter-spacing: 0.01em;
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", "Nunito Sans", sans-serif;
+  color: var(--ink-900);
 }
 
-a {
-  color: var(--canada-red-deep) !important;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 2px;
-}
-
-.canada-hero {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+.ott-top-banner {
+  border: 1px solid #cfdceb;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #eff4fb 0%, #e3edf8 100%);
   margin-bottom: 0.8rem;
-  padding: 14px 16px;
-  border-radius: 18px;
-  border: 1px solid var(--canada-line);
-  border-left: 7px solid var(--canada-red);
-  box-shadow: var(--canada-shadow);
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.98), rgba(255, 245, 241, 0.92));
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-md);
 }
 
-.canada-hero h1 {
-  margin: 0;
-  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+.ott-top-banner h1 {
+  margin: 1.1rem 1.4rem 0.2rem;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  letter-spacing: -0.02em;
 }
 
-.canada-hero p {
-  margin: 0.2rem 0 0;
-  line-height: 1.45;
+.ott-top-banner p {
+  margin: 0 1.4rem 0.8rem;
 }
 
-.canada-runtime {
+.ott-runtime {
   font-size: 0.82rem;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  opacity: 0.75;
+  letter-spacing: 0.08em;
+  color: var(--ink-500);
+  font-weight: 700;
 }
 
-.canada-hero-mark {
-  width: 52px;
-  height: 52px;
+.ott-banner-skyline {
+  height: 76px;
+  border-bottom: 1px solid #cbd9ea;
+  background:
+    radial-gradient(60px 24px at 10% 68%, rgba(98, 187, 153, 0.45), transparent 70%),
+    radial-gradient(70px 25px at 19% 76%, rgba(87, 167, 135, 0.36), transparent 70%),
+    radial-gradient(85px 30px at 74% 72%, rgba(67, 149, 132, 0.42), transparent 70%),
+    radial-gradient(95px 35px at 88% 84%, rgba(59, 138, 120, 0.4), transparent 72%),
+    linear-gradient(180deg, #f3f8ff 0%, #dbe9f8 100%);
+}
+
+.ott-left-rail {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(180deg, #f8fcff 0%, #f0f6fc 100%);
+  box-shadow: var(--shadow-md);
+  padding: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.ott-left-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.ott-left-item {
+  border: 1px solid #d7e3ef;
   border-radius: 14px;
+  padding: 0.65rem 0.8rem;
+  font-family: "Sora", "Nunito Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2b476f;
+  background: #f3f8fd;
+}
+
+.ott-left-item.is-active {
+  background: linear-gradient(120deg, #8ad2b9 0%, #67bc9f 55%, #91ceb8 100%);
+  border-color: #74bea5;
+  color: #ffffff;
+}
+
+.ott-left-footer {
+  margin-top: 0.6rem;
+  border: 1px solid #d5e3f1;
+  border-radius: 14px;
+  padding: 0.65rem 0.8rem;
+  font-weight: 700;
+  color: #4f6f95;
+  background: #eaf2fa;
+}
+
+.ott-chat-intro {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 0.45rem;
+}
+
+.ott-bot-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
   display: grid;
   place-items: center;
-  font-size: 1.65rem;
-  background: linear-gradient(160deg, var(--canada-red), var(--canada-red-deep));
-  color: #fff;
-  box-shadow: 0 10px 24px rgba(132, 8, 28, 0.28);
+  border: 1px solid #cfe0ef;
+  background: linear-gradient(160deg, #7bd0ac 0%, #5cb996 100%);
+  color: white;
+  font-size: 1.4rem;
+}
+
+.ott-chat-intro-bubble {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #f7fbff 0%, #edf3fb 100%);
+  border-radius: 18px;
+  padding: 0.8rem 1rem;
+  box-shadow: var(--shadow-md);
+  color: #274465;
+}
+
+.ott-user-tag {
+  border: 1px solid var(--line);
+  background: #f4f8fc;
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  color: #5e7695;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.ott-resource-grid {
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.ott-resource-card {
+  border: 1px solid #cedceb;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fafd 100%);
+  padding: 0.85rem;
+  box-shadow: var(--shadow-md);
+}
+
+.ott-resource-card h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1.85rem;
+}
+
+.ott-resource-card p {
+  margin: 0 0 0.55rem;
+  color: #3a5779;
+}
+
+.ott-resource-card a {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 0.46rem 0.78rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: #ffffff !important;
+  background: linear-gradient(140deg, var(--green-500) 0%, var(--green-600) 100%);
 }
 
 [data-testid="stChatMessage"] {
-  border-radius: 16px;
-  border: 1px solid var(--canada-line);
-  border-left: 4px solid var(--canada-red);
-  background: var(--canada-panel);
-  box-shadow: var(--canada-shadow);
-  margin-bottom: 0.75rem;
-  animation: bubbleFade 0.25s ease;
+  border: 1px solid #d3dfed;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #f8fbff 0%, #eff4fb 100%);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 0.55rem;
 }
 
-[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] {
-  padding-top: 0.1rem;
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p {
+  color: #29486c;
+  line-height: 1.46;
 }
 
-@keyframes bubbleFade {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* User bubble */
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
+  border-color: #7cb6df;
+  background: linear-gradient(180deg, #5ca4d9 0%, #428cc9 100%);
 }
 
-[data-testid="stChatInput"] {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid var(--canada-line);
-  border-radius: 15px;
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) [data-testid="stMarkdownContainer"] p {
+  color: #ffffff;
 }
 
-.stChatInputContainer button {
-  border-radius: 999px !important;
-  border: 1px solid transparent !important;
-  background: linear-gradient(160deg, var(--canada-red) 0%, var(--canada-red-deep) 100%) !important;
-  color: #fff !important;
-  box-shadow: 0 10px 24px rgba(124, 10, 29, 0.3) !important;
+/* Assistant bubble */
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
+  border-left: 6px solid #67be9f;
 }
 
-.stChatInputContainer button:hover {
+.stButton > button {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #c9d8e8;
+  background: linear-gradient(180deg, #f4f9ff 0%, #ebf2fb 100%);
+  color: #1f3b5f;
+  font-family: "Sora", "Nunito Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  min-height: 44px;
+  box-shadow: 0 4px 12px rgba(36, 77, 127, 0.08);
+}
+
+.stButton > button:hover {
   transform: translateY(-1px);
+  border-color: #a9c4de;
 }
 
-@media (max-width: 768px) {
-  .canada-hero {
-    align-items: flex-start;
+[data-testid="stForm"] {
+  border: 1px solid #cfdeed;
+  border-radius: 18px;
+  background: #f8fbff;
+  padding: 0.6rem 0.75rem 0.5rem;
+  box-shadow: var(--shadow-md);
+  margin-top: 0.4rem;
+}
+
+[data-testid="stTextInput"] input {
+  border-radius: 14px !important;
+  border: 1px solid #cfdceb !important;
+  background: #ffffff !important;
+  min-height: 46px;
+}
+
+[data-testid="stFormSubmitButton"] button {
+  border-radius: 12px !important;
+  border: none !important;
+  background: linear-gradient(140deg, var(--blue-500) 0%, var(--blue-600) 100%) !important;
+  color: #fff !important;
+  font-weight: 800 !important;
+}
+
+.stCaption {
+  color: #5d7797;
+}
+
+@media (max-width: 980px) {
+  .ott-chat-intro {
+    grid-template-columns: auto 1fr;
   }
 
-  .canada-hero-mark {
-    width: 44px;
-    height: 44px;
-    font-size: 1.35rem;
+  .ott-user-tag {
+    display: none;
+  }
+
+  .ott-resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  [data-testid="stMainBlockContainer"] {
+    padding-top: 0.5rem;
   }
 }

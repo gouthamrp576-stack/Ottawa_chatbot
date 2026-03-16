@@ -50,7 +50,7 @@ def _validate_embedding_compatibility(index_dir: Path) -> None:
             return
         raise RuntimeError(
             "Vector index metadata is missing, so embedding compatibility cannot be verified.\n"
-            "Rebuild index with `python -m retriever.ingest --use-seed` "
+            "Rebuild index with `python -m ottawa_assistant.retriever.ingest --use-seed` "
             "or set ALLOW_EMBEDDING_MISMATCH=true."
         )
     if saved_signature == current_signature:
@@ -61,7 +61,7 @@ def _validate_embedding_compatibility(index_dir: Path) -> None:
         "Vector index was built with a different embedding setup.\n"
         f"Current: {current_signature}\n"
         f"Index:   {saved_signature}\n"
-        "Rebuild index with `python -m retriever.ingest --use-seed` "
+        "Rebuild index with `python -m ottawa_assistant.retriever.ingest --use-seed` "
         "or set ALLOW_EMBEDDING_MISMATCH=true."
     )
 
@@ -86,7 +86,7 @@ def load_vector_store(index_dir: Path | None = None) -> FAISS:
     if not _index_exists(target_dir):
         raise FileNotFoundError(
             f"Vector index not found at {target_dir}. "
-            "Run `python -m retriever.ingest --use-seed` first."
+            "Run `python -m ottawa_assistant.retriever.ingest --use-seed` first."
         )
 
     _validate_embedding_compatibility(target_dir)
