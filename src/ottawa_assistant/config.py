@@ -40,6 +40,7 @@ def _env_int(name: str, default: int) -> int:
 
 @dataclass(frozen=True)
 class Settings:
+    log_level: str = os.getenv("LOG_LEVEL", "INFO").strip().upper()
     model_provider: str = os.getenv("MODEL_PROVIDER", "openai").strip().lower()
     embedding_provider: str = os.getenv(
         "EMBEDDING_PROVIDER",
@@ -106,6 +107,10 @@ def is_trusted_url(url: str, trusted_domains: tuple[str, ...] | None = None) -> 
 
 def validate_settings(require_embeddings: bool = False) -> None:
     """Validate provider setup before running retrieval or generation."""
+    if settings.log_level not in {"CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG"}:
+        raise RuntimeError(
+            "LOG_LEVEL must be one of: CRITICAL, ERROR, WARNING, INFO, DEBUG."
+        )
     if settings.model_provider not in SUPPORTED_MODEL_PROVIDERS:
         raise RuntimeError(
             "MODEL_PROVIDER must be one of: "

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import re
-from typing import Iterable
 
 from googlesearch import search
 from langchain_community.document_loaders import WebBaseLoader
@@ -11,8 +10,12 @@ from langchain_core.documents import Document
 from langchain_core.messages import BaseMessage
 
 from .config import is_trusted_url, settings
+from .logging_utils import get_logger
 from .model_factory import create_chat_model
 from .prompts import build_qa_prompt
+from .utils import dedupe_preserve_order
+
+logger = get_logger(__name__)
 
 _TOKEN_RE = re.compile(r"[a-z0-9]+")
 _STOPWORDS = {
@@ -43,18 +46,6 @@ _STOPWORDS = {
 }
 
 
-def _dedupe_preserve_order(items: Iterable[str]) -> list[str]:
-    seen: set[str] = set()
-    ordered: list[str] = []
-    for raw_item in items:
-        item = raw_item.strip()
-        if not item or item in seen:
-            continue
-        seen.add(item)
-        ordered.append(item)
-    return ordered
-
-
 def _tokenize(text: str) -> set[str]:
     tokens = {token for token in _TOKEN_RE.findall(text.lower()) if len(token) > 1}
     return {token for token in tokens if token not in _STOPWORDS}
@@ -77,12 +68,12 @@ def _search_trusted_urls(question: str) -> list[str]:
     except Exception as exc:  # noqa: BLE001
         raise RuntimeError(f"Google search failed: {exc}") from exc
 
-    trusted_urls = _dedupe_preserve_order(candidates)
+    trusted_urls = dedupe_preserve_order(candidates)
     if len(trusted_urls) < settings.google_fallback_pages:
         for seed_url in settings.seed_web_sources:
             if is_trusted_url(seed_url):
                 trusted_urls.append(seed_url)
-            trusted_urls = _dedupe_preserve_order(trusted_urls)
+            trusted_urls = dedupe_preserve_order(trusted_urls)
             if len(trusted_urls) >= settings.google_fallback_pages:
                 break
 
@@ -96,7 +87,8 @@ def _load_web_documents(urls: list[str]) -> list[Document]:
         try:
             loader = WebBaseLoader(web_paths=(url,))
             loaded_docs = loader.load()
-        except Exception:  # noqa: BLE001
+        except Exception as exc:  # noqa: BLE001
+            logger.warning("google_fallback_loader_failed url=%s error=%s", url, exc)
             continue
 
         for doc in loaded_docs:
@@ -155,7 +147,7 @@ def _extract_answer_text(response_content: object) -> str:
 
 
 def _format_sources(documents: list[Document]) -> str:
-    sources = _dedupe_preserve_order(
+    sources = dedupe_preserve_order(
         str(doc.metadata.get("source", "")).strip()
         for doc in documents
     )
@@ -169,6 +161,7 @@ def answer_with_google_fallback(
     chat_history: list[BaseMessage],
 ) -> tuple[str, str]:
     """Answer a user question from trusted Google-discovered web sources."""
+    logger.info("google_fallback_started question_length=%s", len(question))
     urls = _search_trusted_urls(question)
     if not urls:
         raise RuntimeError("No trusted URLs were found by Google fallback search.")
@@ -192,4 +185,5 @@ def answer_with_google_fallback(
     if not answer_text:
         answer_text = "I could not find enough information from trusted web sources."
 
+    logger.info("google_fallback_completed sources=%s", len(selected_docs))
     return answer_text, _format_sources(selected_docs)

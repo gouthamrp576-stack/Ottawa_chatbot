@@ -20,9 +20,11 @@ If the local FAISS index is unavailable, it can automatically fall back to trust
 │   └── ottawa_assistant/
 │       ├── __init__.py
 │       ├── main.py              # Streamlit app implementation
+│       ├── chat_service.py      # Chat orchestration + fallback handling
 │       ├── prompts.py           # Custom newcomer prompt templates
 │       ├── rag_chain.py         # LangChain conversational retrieval chain
 │       ├── config.py            # Environment settings + trusted domain list
+│       ├── logging_utils.py     # Shared logging configuration helpers
 │       ├── model_factory.py     # OpenAI/Ollama model + embedding factories
 │       ├── web_fallback.py      # Trusted Google fallback answer flow
 │       └── retriever/
@@ -30,6 +32,12 @@ If the local FAISS index is unavailable, it can automatically fall back to trust
 │           ├── ingest.py        # Ingest web pages and PDFs
 │           ├── vector_store.py  # FAISS load/save helpers
 │           └── index/           # Persisted vector index + metadata
+├── docs/
+│   └── developer_guide.md
+├── tests/
+│   ├── integration/
+│   └── unit/
+├── pyproject.toml
 ├── requirements.txt
 ├── .env.example
 └── public/
@@ -40,22 +48,16 @@ If the local FAISS index is unavailable, it can automatically fall back to trust
 ## Setup
 
 1. Create and activate a virtual environment.
-2. Install dependencies:
+2. Install the project in editable mode:
+
+```bash
+pip install -e ".[dev]"
+```
+
+If you prefer the legacy requirements workflow, this still works:
 
 ```bash
 pip install -r requirements.txt
-```
-
-If you already installed packages before, force-refresh compatible versions:
-
-```bash
-pip install --upgrade --force-reinstall -r requirements.txt
-```
-
-Google fallback dependency can also be installed directly:
-
-```bash
-pip install googlesearch-python
 ```
 
 3. Create `.env`:
@@ -65,11 +67,6 @@ cp .env.example .env
 ```
 
 4. Configure model provider in `.env` (OpenAI or Ollama).
-5. Expose the `src` package path:
-
-```bash
-export PYTHONPATH="$PWD/src"
-```
 
 ## Model Provider Setup
 
@@ -155,9 +152,17 @@ streamlit run src/ottawa_assistant/main.py
 
 Open the URL shown in terminal (usually [http://localhost:8501](http://localhost:8501)).
 
+## Quality Checks
+
+```bash
+python -m compileall src tests
+pytest tests/
+```
+
 ## Notes
 
 - The assistant only ingests trusted domains from `src/ottawa_assistant/config.py`.
 - If no vector index exists, the app tells you to run ingestion first.
 - The interface is Canada-themed (`public/style.css`, `public/maple-leaf.svg`), with maple-leaf visual branding.
-- Runtime details (LLM, embeddings, retrieval top-k) are shown in the UI sidebar.
+- Runtime details (LLM, embeddings, retrieval top-k) are shown inside the app shell.
+- `LOG_LEVEL` controls application logging and defaults to `INFO`.

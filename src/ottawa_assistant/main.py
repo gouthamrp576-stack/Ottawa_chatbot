@@ -1,30 +1,37 @@
 """Streamlit entrypoint for Ottawa Newcomer Assistant.
 
 Run:
-    PYTHONPATH=src streamlit run src/ottawa_assistant/main.py
+    streamlit run src/ottawa_assistant/main.py
 """
 
 from __future__ import annotations
 
-from base64 import b64encode
+import sys
 from pathlib import Path
+
+# Ensure the `src/` directory is on sys.path so `ottawa_assistant` is always
+# importable without needing `export PYTHONPATH=src`.
+_SRC_DIR = str(Path(__file__).resolve().parents[1])
+if _SRC_DIR not in sys.path:
+    sys.path.insert(0, _SRC_DIR)
+
+from base64 import b64encode
 from typing import Final
 
 import streamlit as st
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 
-import sys
-print(sys.path)
+from ottawa_assistant.chat_service import process_chat_turn
 from ottawa_assistant.config import settings, validate_settings
+from ottawa_assistant.logging_utils import configure_logging
 from ottawa_assistant.model_factory import runtime_summary
-from ottawa_assistant.rag_chain import build_rag_chain, format_sources
-from ottawa_assistant.web_fallback import answer_with_google_fallback
+from ottawa_assistant.rag_chain import build_rag_chain
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_ASSISTANT_MESSAGE = (
     "Hi! I'm OttawaBot. I can help newcomers with jobs, study options, "
     "healthcare, housing, and local services."
 )
+USER_DISPLAY_NAME = "You"
 QUICK_PROMPTS: Final[list[tuple[str, str]]] = [
     ("Jobs in Ottawa", "Can you help me find a job in Ottawa?"),
     ("Student Resources", "Show me study resources for newcomers in Ottawa."),
@@ -101,20 +108,25 @@ def _render_left_rail() -> None:
         unsafe_allow_html=True,
     )
 
-    if st.button("Find a Job", use_container_width=True):
-        _process_input("Can you help me find a job in Ottawa?")
+    if st.button("Find a Job", use_container_width=True) and _process_input(
+        "Can you help me find a job in Ottawa?"
+    ):
         st.rerun()
-    if st.button("Study Resources", use_container_width=True):
-        _process_input("Show me newcomer-friendly study resources in Ottawa.")
+    if st.button("Study Resources", use_container_width=True) and _process_input(
+        "Show me newcomer-friendly study resources in Ottawa."
+    ):
         st.rerun()
-    if st.button("Housing", use_container_width=True):
-        _process_input("Can you help me understand renting and housing options in Ottawa?")
+    if st.button("Housing", use_container_width=True) and _process_input(
+        "Can you help me understand renting and housing options in Ottawa?"
+    ):
         st.rerun()
-    if st.button("Local Services", use_container_width=True):
-        _process_input("What local newcomer services should I contact first in Ottawa?")
+    if st.button("Local Services", use_container_width=True) and _process_input(
+        "What local newcomer services should I contact first in Ottawa?"
+    ):
         st.rerun()
-    if st.button("Ask Anything", use_container_width=True):
-        _process_input("What should I do first week after arriving in Ottawa as a newcomer?")
+    if st.button("Ask Anything", use_container_width=True) and _process_input(
+        "What should I do first week after arriving in Ottawa as a newcomer?"
+    ):
         st.rerun()
 
     st.markdown(
@@ -142,14 +154,14 @@ def _init_state() -> None:
 def _render_chat_intro() -> None:
     """Render welcome row in the chat panel."""
     st.markdown(
-        """
+        f"""
         <section class="ott-chat-intro">
           <div class="ott-bot-avatar">🤖</div>
           <div class="ott-chat-intro-bubble">
             <strong>Hi! I'm OttawaBot</strong> - here to help newcomers settle in Ottawa.
             How can I assist you today?
           </div>
-          <div class="ott-user-tag">Minh Alice Nguyen</div>
+          <div class="ott-user-tag">{USER_DISPLAY_NAME}</div>
         </section>
         """,
         unsafe_allow_html=True,
@@ -190,8 +202,8 @@ def _render_quick_prompts() -> None:
     for col, (label, prompt) in zip(cols, QUICK_PROMPTS):
         with col:
             if st.button(label, use_container_width=True, key=f"quick-{label}"):
-                _process_input(prompt)
-                st.rerun()
+                if _process_input(prompt):
+                    st.rerun()
 
 
 def _render_input_form() -> None:
@@ -205,77 +217,32 @@ def _render_input_form() -> None:
         submitted = st.form_submit_button("Send")
 
     if submitted and user_input.strip():
-        _process_input(user_input.strip())
-        st.rerun()
+        if _process_input(user_input):
+            st.rerun()
 
 
-def _is_index_unavailable_error(exc: Exception) -> bool:
-    message = str(exc).lower()
-    markers = (
-        "vector index not found",
-        "vector index metadata is missing",
-        "vector index was built with a different embedding setup",
-        "run `python -m ottawa_assistant.retriever.ingest --use-seed` first",
-    )
-    return any(marker in message for marker in markers)
-
-
-def _process_input(user_input: str) -> None:
-    """Invoke RAG chain and append assistant response to state."""
-    st.session_state.messages.append({"role": "user", "content": user_input})
+def _process_input(user_input: str) -> bool:
+    """Invoke chat service and append user/assistant messages to state."""
     with st.spinner("Checking official Ottawa sources..."):
-        answer = ""
-        sources = ""
-        used_fallback = False
-        should_update_history = False
-
         try:
-            rag_chain = _get_rag_chain()
-            chat_history: list[BaseMessage] = st.session_state.chat_history
-            result = rag_chain.invoke({"input": user_input, "chat_history": chat_history})
-            answer = str(result.get("answer", "")).strip() or "I could not find a confident answer."
-            sources = format_sources(result.get("context", []))
-            should_update_history = True
-        except (FileNotFoundError, RuntimeError) as exc:
-            chat_history = st.session_state.chat_history
-            if settings.enable_web_fallback and _is_index_unavailable_error(exc):
-                try:
-                    answer, sources = answer_with_google_fallback(
-                        question=user_input,
-                        chat_history=chat_history,
-                    )
-                    used_fallback = True
-                    should_update_history = True
-                except Exception as fallback_exc:  # noqa: BLE001
-                    final_text = (
-                        "Local index is unavailable and Google fallback also failed.\n\n"
-                        f"Index error: `{exc}`\n\n"
-                        f"Fallback error: `{fallback_exc}`\n\n"
-                        "Try rebuilding local index:\n"
-                        "`python -m ottawa_assistant.retriever.ingest --use-seed`"
-                    )
-            else:
-                final_text = f"I ran into an issue while preparing your answer.\n\nError: `{exc}`"
-        except Exception as exc:  # noqa: BLE001
-            final_text = f"I ran into an issue while preparing your answer.\n\nError: `{exc}`"
-
-    if should_update_history:
-        if used_fallback:
-            final_text = (
-                "_Local index unavailable. Used trusted Google search fallback._\n\n"
-                f"{answer}\n\n**Sources**\n{sources}"
+            turn = process_chat_turn(
+                user_input,
+                st.session_state.chat_history,
+                rag_chain_factory=_get_rag_chain,
             )
-        else:
-            final_text = f"{answer}\n\n**Sources**\n{sources}"
-        chat_history.append(HumanMessage(content=user_input))
-        chat_history.append(AIMessage(content=answer))
-        st.session_state.chat_history = chat_history
+        except ValueError as exc:
+            st.warning(str(exc))
+            return False
 
-    st.session_state.messages.append({"role": "assistant", "content": final_text})
+    st.session_state.messages.append({"role": "user", "content": turn.user_input})
+    st.session_state.messages.append({"role": "assistant", "content": turn.assistant_message})
+    st.session_state.chat_history = turn.next_chat_history
+    return True
 
 
 def main() -> None:
     """Run the Streamlit app."""
+    configure_logging(settings.log_level)
     st.set_page_config(
         page_title="Ottawa Newcomer Assistant",
         page_icon="🍁",
