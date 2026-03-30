@@ -1,0 +1,854 @@
+[
+  {
+    "id": "b541b1e5-a8d8-4e92-9c86-e27f7a4fbdf1",
+    "title": "what is the new update",
+    "created_at": "2026-03-27T21:44:02.362065Z",
+    "updated_at": "2026-03-27T21:45:39.965062Z",
+    "selected_category": "All",
+    "messages": [
+      {
+        "role": "user",
+        "content": "what is the new update",
+        "timestamp": "2026-03-27T21:44:09.999699Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The new update includes several changes to OC Transpo services starting in 2026:\n\n- Transfer window will be temporarily extended to 105 minutes on weekdays from 3 to 6 pm.\n- Free trips for youth (18 and under) on weekends, after 5 pm on weekdays, public holidays, and during July and August.\n- New fares will take effect on January 1, 2026, with monthly passes going on sale December 18, 2025.\n- Enhanced safety measures such as special constable training and a new Safety & Security Reporting App launching in 2026.\n\nFor detailed fare prices and more information, you can visit the OC Transpo website or their customer service centers.\n\nCitations:\n- [Job Guide for New Immigrants in Ottawa.pdf] — retrieved from official document chunk\n- [Workers.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Comprehensive Fare.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Job Guide for New Immigrants in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "Workers.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "OC Transpo 2026 Comprehensive Fare.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          }
+        ],
+        "timestamp": "2026-03-27T21:44:17.960779Z"
+      },
+      {
+        "role": "user",
+        "content": "ok give me some community services in ottawa",
+        "timestamp": "2026-03-27T21:44:42.749736Z"
+      },
+      {
+        "role": "assistant",
+        "content": "In Ottawa, newcomers can access several community services to help with settling and integration:\n\n1. **OCISO (Ottawa Community Immigrant Services Organization)**  \n   - Provides support in multiple languages  \n   - Offers guidance on housing, jobs, and community services  \n   - Helps newcomers feel included and build a new life in Ottawa  \n   - Locations in Central, East End, and South End Ottawa  \n\n2. **CCI Ottawa – Settlement Services**  \n   - Free, confidential, culturally sensitive services for immigrants and refugees  \n   - Assistance with documents like driver’s licence, health card, and work permits  \n   - Available to permanent residents, international students, temporary foreign workers, and refugees  \n\n3. **Racial Equity Committee (REC)**  \n   - Works to address discrimination and inequality  \n\n4. **Accessibility Commitment**  \n   - Ensures equal service and accommodation for people with disabilities, including assistive devices and service animals  \n\n5. **Ottawa Rec Sports**  \n   - Social, co-ed sports community focused on fun and making friends  \n   - Offers leagues and casual games in soccer, volleyball, pickleball, and more  \n\nThese services provide practical support and opportunities to connect with the community in Ottawa.\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk\n- [Newcomer Support & Welcome Services.pdf] — retrieved from official document chunk\n- [Community Activities & Social Life.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "Newcomer Support & Welcome Services.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "Community Activities & Social Life.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          }
+        ],
+        "timestamp": "2026-03-27T21:44:51.944085Z"
+      },
+      {
+        "role": "user",
+        "content": "give me some activiteis or events going on in ottawa",
+        "timestamp": "2026-03-27T21:45:31.525535Z"
+      },
+      {
+        "role": "assistant",
+        "content": "In Ottawa, you can enjoy a variety of activities and events such as:\n\n- Winterlude, a festival celebrating Canadian winter culture with outdoor activities.\n- The Canadian Tulip Festival, the largest tulip festival worldwide.\n- Music, food, hot air balloon, international culture, and animation festivals throughout the year.\n- Ottawa Rec Sports offers adult-friendly, social, co-ed sports leagues including soccer, volleyball, multi-sports, and pickleball with casual drop-in games and competitive leagues.\n- Explore outdoor activities like boating, paddling, whitewater rafting in warmer months, and ice skating, skiing, and snowshoeing in winter.\n- Visit cultural and historic sites such as Parliament Hill with free tours, national museums, and local museums like the Bytown Museum and Ottawa Art Gallery.\n- Enjoy walkable neighborhoods like ByWard Market with restaurants, cafés, and nightlife.\n\nYou can also sign up for the Ottawa Tourism newsletter to get updates on family vacations, outdoor adventures, arts, music, culture, sports, and food events.\n\nCitations:\n- [Community Activities & Social Life.pdf] — retrieved from official document chunk\n- [community events in ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Community Activities & Social Life.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          }
+        ],
+        "timestamp": "2026-03-27T21:45:39.965044Z"
+      }
+    ]
+  },
+  {
+    "id": "dd6b65fd-9a92-40dc-be3e-cd0109edc8ca",
+    "title": "What newcomer support information is avail...",
+    "created_at": "2026-03-20T20:17:46.530321Z",
+    "updated_at": "2026-03-23T23:40:08.590479Z",
+    "selected_category": "All",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What newcomer support information is available for healthcare in Ottawa?",
+        "timestamp": "2026-03-20T20:17:52.686546Z"
+      },
+      {
+        "role": "assistant",
+        "content": "In Ottawa, newcomers can access healthcare through the Ontario Health Insurance Plan (OHIP), which covers many medically necessary services such as doctor visits, hospital care, diagnostic tests, and emergency treatment. Newcomers should apply for OHIP as soon as they are eligible and keep their health card safe. For primary care, registering with a family doctor is recommended, but walk-in clinics are available across the city for non-emergency care without an appointment. Community Health Centres also provide medical and social services, including language and newcomer support.\n\nFor emergencies, call 911 or visit emergency departments, which are open 24/7. Mental health support is available through confidential and free services by calling or texting 988 anytime. Ottawa offers counseling, therapy, crisis intervention, and newcomer-focused mental health programs. Students at the University of Ottawa and Carleton University have access to dedicated health and mental wellness services, often covered by university health insurance plans.\n\nNewcomers should carry their health card when accessing services, ask about language interpretation if needed, and seek guidance from settlement agencies or community organizations to navigate the healthcare system effectively.\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-20T20:18:01.582651Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of housing resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-20T20:18:29.104013Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Newcomers in Ottawa can access a variety of housing resources to help find rental accommodation, understand tenant rights, and get support for affordable or emergency housing. Rental options include apartments, basement apartments, shared rooms, student residences, and short-term rentals. Key places to search are City of Ottawa housing resources, CMHC, university housing portals, newcomer settlement organizations, and online platforms.\n\nTenant rights in Ontario include having a written lease, limits on rent increases, protection from illegal eviction, and the right to maintenance and privacy. Tenants must pay rent on time, keep the unit clean, follow building rules, and report maintenance issues.\n\nAffordable housing programs like rent-geared-to-income and subsidized housing are available through the City of Ottawa Housing Registry, with eligibility based on income and household size. Wait times may apply.\n\nFor short-term or emergency housing, options include temporary accommodations and emergency shelters, which are available for those with no safe place to stay or at risk of homelessness.\n\nNewcomers are advised to never pay rent before viewing a unit, avoid cash payments without receipts, read lease agreements carefully, seek help from settlement agencies, and keep copies of all housing documents.\n\nSupport services for newcomers include help understanding leases, tenant rights guidance, housing search assistance, and referrals to affordable housing programs, provided by organizations like OCISO, YMCA Newcomer Services, and city-funded settlement agencies.\n\nCitations:\n- [Housing and rentals.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-20T20:18:38.140886Z"
+      },
+      {
+        "role": "user",
+        "content": "explain in detial",
+        "timestamp": "2026-03-20T20:19:28.468199Z"
+      },
+      {
+        "role": "assistant",
+        "content": "I don't have enough information in the provided official documents to answer that.\n\nCitations:\n- [Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk\n- [study1.pdf] — retrieved from official document chunk\n- [University of Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Job Search Guide for International Students in Canada.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "study1.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          },
+          {
+            "file_name": "University of Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          }
+        ],
+        "timestamp": "2026-03-20T20:19:34.086307Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of jobs resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-20T20:19:44.425207Z"
+      },
+      {
+        "role": "assistant",
+        "content": "For newcomers in Ottawa, especially international students and permanent residents, Job Bank Canada is a key resource for job searching. It offers listings for common entry-level jobs such as retail associates, food service workers, customer service representatives, administrative assistants, IT support roles, and warehouse positions. International students can work up to 20 hours per week during academic terms and full-time during breaks, provided their study permit allows off-campus work. Permanent residents have no restrictions on work hours and can apply for full-time or part-time jobs.\n\nTo use Job Bank effectively, set the location filter to Ottawa, use student-friendly job filters, create an account for job alerts, and carefully check job eligibility and requirements. Networking is also important—using LinkedIn, attending career fairs, joining student groups, and connecting with professors can help find job opportunities. Avoid common mistakes like sending the same resume to all jobs, ignoring networking, and applying without reading job requirements. Always use trusted platforms and verify employers to stay safe.\n\nWages for student jobs typically start at Ontario minimum wage, with higher pay possible for skilled roles. Building Canadian work experience through part-time or entry-level jobs is valuable for newcomers.\n\nCitations:\n- [jobs_01_jobbank_canada_ottawa.pdf] — retrieved from official document chunk\n- [Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "jobs_01_jobbank_canada_ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "Job Search Guide for International Students in Canada.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          }
+        ],
+        "timestamp": "2026-03-20T20:19:52.785861Z"
+      },
+      {
+        "role": "user",
+        "content": "What newcomer support information is available for healthcare in Ottawa?",
+        "timestamp": "2026-03-20T20:21:20.698362Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Newcomers in Ottawa can access healthcare through the Ontario Health Insurance Plan (OHIP), which covers many medically necessary services such as doctor visits, hospital care, diagnostic tests, and emergency treatment. Eligibility for OHIP depends on immigration status and residency, and some newcomers may have a waiting period before coverage begins. It is important to apply for OHIP as soon as you are eligible and keep your health card safe.\n\nFor primary care, newcomers should try to register with a family doctor if possible. Walk-in clinics are available across Ottawa for non-emergency medical needs and do not require appointments. Community Health Centres offer medical and social services, including language and newcomer support, focusing on community-based care.\n\nIn emergencies, call 911 for urgent medical help. Emergency departments in hospitals are open 24/7. For mental health crises, call or text 988 for confidential, free support available anytime across Canada. Ottawa also offers mental health services such as counselling, therapy, crisis intervention, and support groups through public health organizations and community agencies.\n\nStudents at the University of Ottawa and Carleton University have access to dedicated health and mental wellness services, often covered by university health insurance plans that complement OHIP.\n\nNewcomers should always carry their health card when accessing services, ask about language interpretation if needed, and seek guidance from settlement agencies or community organizations to navigate the healthcare system effectively.\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-20T20:21:29.044933Z"
+      },
+      {
+        "role": "user",
+        "content": "give me some mor inormation",
+        "timestamp": "2026-03-23T23:39:33.723530Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Could you please specify what kind of information you need? For example, are you looking for help with housing, jobs, or study permits in Ottawa? This will help me provide you with the most relevant and useful details.\n\nCitations:\n- [Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk\n- [IRCC Study Permit Guide for Newcomers in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Job Search Guide for International Students in Canada.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "IRCC Study Permit Guide for Newcomers in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          }
+        ],
+        "timestamp": "2026-03-23T23:39:42.169960Z"
+      },
+      {
+        "role": "user",
+        "content": "Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk",
+        "timestamp": "2026-03-23T23:40:00.189237Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here is a practical job search guide for international students in Canada:\n\n1. Use Job Bank, the official Government of Canada job site. It is free, reliable, and has thousands of verified listings. You can search by location, salary, and job type. Some jobs are marked as open to international applicants.\n\n2. Explore other top job websites:\n- Indeed Canada for many listings and quick applications\n- LinkedIn for professional networking, internships, and co-op roles\n- Glassdoor to research company culture and salaries\n- TalentEgg for internships and entry-level jobs for students\n- Workopolis for part-time and entry-level jobs\n\n3. Types of jobs while studying include retail, restaurant, customer service, campus jobs, delivery, and warehouse roles. After graduation, look for full-time professional jobs, internships, and skilled jobs related to your degree.\n\n4. Follow Canadian work rules: have a valid study permit, work up to 20–40 hours per week during studies, and full-time during breaks.\n\n5. Application steps:\n- Prepare a Canadian-style resume (1–2 pages, no photo or personal details, focus on skills and achievements)\n- Write a tailored cover letter for each job\n- Apply consistently to multiple jobs daily and track your applications\n- Prepare for interviews by practicing questions and researching the company\n\n6. Networking is important. Use LinkedIn, attend career fairs, join student groups, and connect with professors to increase your chances.\n\nThis approach will help you find part-time work during studies and full-time jobs after graduation in Canada.\n\nCitations:\n- [Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Job Search Guide for International Students in Canada.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          }
+        ],
+        "timestamp": "2026-03-23T23:40:08.590458Z"
+      }
+    ]
+  },
+  {
+    "id": "38ad87cc-0f8f-42c4-bd24-95a4dd9eba76",
+    "title": "What newcomer support information is avail...",
+    "created_at": "2026-03-19T01:49:48.889503Z",
+    "updated_at": "2026-03-19T03:47:53.981190Z",
+    "selected_category": "All",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What newcomer support information is available for healthcare in Ottawa?",
+        "timestamp": "2026-03-19T01:50:01.874939Z"
+      },
+      {
+        "role": "assistant",
+        "content": "In Ottawa, newcomers can access healthcare through a well-established system involving Ontario Health Insurance Plan (OHIP), Ottawa Public Health, and federal services. Here is the key information for newcomers regarding healthcare support:\n\n1. **Ontario Health Insurance Plan (OHIP):**  \n   - OHIP is Ontario’s public health insurance program that covers medically necessary services such as doctor visits, hospital care, diagnostic tests, and emergency treatment.  \n   - Eligibility depends on immigration status and residency. Some newcomers may have a waiting period, but currently, there is no waiting period for OHIP coverage upon approval.  \n   - Newcomers should apply for OHIP as soon as they are eligible and keep their health card safe.\n\n2. **Accessing Primary Care:**  \n   - Register with a family doctor if possible, as they provide ongoing medical care and referrals.  \n   - Use walk-in clinics for non-emergency medical needs; these clinics do not require appointments and are available across Ottawa.  \n   - Community Health Centres offer integrated medical and social services, often with newcomer and language support, focusing on community-based care.\n\n3. **Emergency and Crisis Services:**  \n   - For life-threatening emergencies, call 911 for immediate assistance. Emergency departments operate 24/7.  \n   - For mental health crises, call or text 988, a confidential and free national crisis line available 24/7.\n\n4. **Mental Health Support:**  \n   - Ottawa provides counselling, therapy, community mental health programs, crisis intervention, and newcomer-focused support groups.  \n   - These services are accessible through public health organizations and community agencies.\n\n5. **Student Health Services:**  \n   - Students at the University of Ottawa and Carleton University have access to dedicated health and wellness services, including mental health counselling and wellness programs.  \n   - International students often receive additional health insurance through university plans.\n\n6. **Additional Tips for Newcomers:**  \n   - Always carry your health card when accessing medical services.  \n   - Ask about language interpretation services if needed.  \n   - Use emergency services only for urgent situations.  \n   - Settlement agencies and community organizations can provide guidance on navigating the healthcare system.\n\nThis comprehensive support ensures newcomers in Ottawa can access essential healthcare services, emergency care, and mental health resources effectively.\n\nCitations:\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Ontario Health Insurance Plan.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Ontario Health Insurance Plan.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-19T01:50:16.339580Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of housing resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-19T01:50:32.535733Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Housing resources for newcomers in Ottawa provide comprehensive support to help find rental accommodation, understand tenant rights, access affordable housing, and get emergency housing if needed. Newcomers can find various rental types such as apartments, basement apartments, shared rooms, student residences, and short-term rentals. Key places to search include City of Ottawa housing services, Canada Mortgage and Housing Corporation (CMHC), university housing portals (University of Ottawa and Carleton University), newcomer settlement organizations, and online rental platforms.\n\nTenant rights in Ontario include having a written lease, limits on rent increases, protection from illegal eviction, and rights to maintenance and privacy. Tenants must pay rent on time, keep the unit in good condition, follow building rules, and report maintenance issues.\n\nAffordable housing options include rent-geared-to-income and subsidized housing programs managed through the City of Ottawa Housing Registry, with eligibility based on income and household size. Wait times may apply.\n\nFor students, Ottawa offers on-campus residences with meal plans and support services at University of Ottawa and Carleton University, as well as off-campus housing assistance. Student housing options range from shared rooms to private studios, with various platforms like University Living, Rentola, and 4stay helping with bookings. Popular student neighborhoods include Sandy Hill, Centretown, and Old Ottawa South.\n\nShort-term and temporary housing options are available for initial settlement periods, including short-term rentals regulated by the city and emergency shelters for those at risk of homelessness.\n\nNewcomers can get housing help from organizations such as OCISO, YMCA Newcomer Services, and city-funded settlement agencies, which assist with lease understanding, tenant rights, housing search, and referrals.\n\nImportant tips include never paying rent before viewing a unit, avoiding cash payments without receipts, reading lease agreements carefully, and keeping copies of all housing documents.\n\nEmergency housing and shelters are available for those with no safe place to stay, offering emergency shelters, housing stabilization, and crisis support referrals.\n\nOverall, newcomers in Ottawa have access to a variety of housing resources and support services to help them find safe, affordable, and suitable accommodation.\n\nCitations:\n- [Housing and rentals.pdf] — retrieved from official document chunk\n- [Student Housing in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "Student Housing in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T01:50:45.955019Z"
+      },
+      {
+        "role": "user",
+        "content": "ok now lets study about the ccommunity events or enjoying times events in ottawa",
+        "timestamp": "2026-03-19T02:25:39.185073Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Ottawa offers a vibrant range of community events and enjoyable activities that are great for newcomers and international students to get involved in and have fun. Here are some highlights:\n\n1. **Social Events & Entertainment**  \n   - Events like drag shows, comedy nights, and dance parties are popular ways to relax and meet new people.  \n   - Popular venues include The Lookout Bar & Nightclub and Beyond the Pale ByWard Taproom.  \n   - These events provide a chance to experience Canadian nightlife and socialize after studies.\n\n2. **Community & Networking Events**  \n   - Newcomer meetups, cultural gatherings, and professional networking sessions help build friendships, improve communication skills, and find job opportunities.  \n   - These events foster a strong community culture beneficial for newcomers.\n\n3. **Free Events for Students**  \n   - Workshops, clothing swap events, and public festivals are budget-friendly ways to develop skills and engage with the community.\n\n4. **Festivals and Seasonal Events**  \n   - Ottawa hosts year-round festivals such as Winterlude (ice skating and ice sculpture competitions), the Canadian Tulip Festival (millions of tulips and cultural performances), and Asian Night Markets (street food and cultural shows).  \n   - These festivals offer unique cultural experiences and social outings.\n\n5. **Popular Areas for Socializing**  \n   - ByWard Market is a vibrant area with restaurants, cafés, street food vendors, bars, nightlife, and farmers’ markets, making it a social and cultural hub for students.\n\n6. **Outdoor Activities**  \n   - The Rideau Canal offers walking, cycling, boating in summer, and transforms into the world’s largest skating rink in winter.  \n   - Gatineau Park nearby provides hiking, cycling, skiing, and snowshoeing opportunities for nature lovers.\n\nTo stay updated on events, newcomers are encouraged to regularly attend local events, follow platforms like Eventbrite, and build social and professional networks. This will help you enjoy a balanced academic and social life in Ottawa.\n\nIf you want to explore community events and activities, checking event platforms such as Eventbrite for the latest gatherings is recommended.\n\nEnjoy your time in Ottawa by participating in these diverse and welcoming community events!\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk\n- [University of Ottawa.pdf] — retrieved from official document chunk\n- [jobs_01_jobbank_canada_ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "University of Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          },
+          {
+            "file_name": "jobs_01_jobbank_canada_ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          }
+        ],
+        "timestamp": "2026-03-19T02:25:54.546863Z"
+      },
+      {
+        "role": "user",
+        "content": "i need to know about community events in ottawa ",
+        "timestamp": "2026-03-19T03:12:28.975396Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The chatbot service is currently unavailable. Please try again in a moment.",
+        "sources": [],
+        "timestamp": "2026-03-19T03:12:31.054880Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of community events resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-19T03:44:07.457489Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Ottawa offers many community events and resources for newcomers, especially international students. These include newcomer meetups, cultural gatherings, and professional networking sessions that help build friendships, improve communication skills, and find job opportunities. There are also free events like workshops, clothing swaps, and public festivals that are budget-friendly and promote community engagement. Seasonal festivals such as Winterlude, the Canadian Tulip Festival, and Asian Night Markets provide opportunities to experience Canadian culture, enjoy diverse foods, and socialize. Social events like drag shows, comedy nights, and dance parties at popular venues offer ways to relax and meet new people. Newcomers are encouraged to attend local events regularly, use student discounts, and explore event platforms like Eventbrite to stay informed. Overall, Ottawa’s community events support cultural integration, entertainment, and career development for newcomers.\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          }
+        ],
+        "timestamp": "2026-03-19T03:44:17.329749Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of healthcare resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-19T03:44:24.801451Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Healthcare resources for newcomers in Ottawa include access to medical care, public health services, and emergency support provided by the Government of Ontario, Ottawa Public Health, the Government of Canada, and local health institutions. Newcomers should apply for the Ontario Health Insurance Plan (OHIP) as soon as they are eligible, as OHIP covers many medically necessary services such as doctor visits, hospital care, diagnostic tests, and emergency treatment. Eligibility depends on immigration status and residency, and some newcomers may face a waiting period.\n\nFor primary care, newcomers are encouraged to register with a family doctor if possible, use walk-in clinics for non-emergency care, and access Community Health Centres that offer medical and social services, including language and newcomer support. In emergencies, call 911 for immediate medical help. Mental health crisis support is available 24/7 by calling or texting 988, providing confidential and free assistance.\n\nNewcomers should carry their health card when accessing services and can seek language interpretation if needed. Settlement agencies and community organizations can assist with navigating the healthcare system. Students have additional health services through their universities, which often provide insurance plans covering services not included under OHIP.\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-19T03:44:38.352564Z"
+      },
+      {
+        "role": "user",
+        "content": "can you please elaborate a bit that please for me ",
+        "timestamp": "2026-03-19T03:44:53.200118Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Could you please specify which topic or document you would like me to elaborate on? For example, housing rights, finding rentals, student housing, or emergency shelter support? This will help me provide a clear and detailed explanation based on the official information available.\n\nCitations:\n- [Housing and rentals.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T03:44:59.089152Z"
+      },
+      {
+        "role": "user",
+        "content": "student housing",
+        "timestamp": "2026-03-19T03:45:13.755127Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Ottawa offers a variety of student housing options to fit different budgets and preferences. You can choose from on-campus residences, apartment-style housing, or shared rooms. Some popular options include:\n\n- University Living: Fully furnished rooms with bills often included. Shared rooms cost about CAD $700–900/month, private rooms CAD $900–1,300/month.\n- Algonquin College Residence: On-campus, fully furnished suites with utilities included, costing CAD $900–1,200/month.\n- 1Eleven: Modern furnished apartments near downtown with gym and study areas. Shared rooms cost around CAD $900/month, private around CAD $1,300/month.\n- ALMA @ ByWard Market: Premium housing with study lounges and gym, costing CAD $1,100–1,500/month.\n- The Revalie Ottawa and Theo Ottawa: Purpose-built student housing with fitness centers and study rooms, costing between CAD $950 and $1,400/month.\n\nTo book, browse verified listings, contact property managers, submit rental applications, and pay a deposit plus first month’s rent. Avoid scams by using trusted platforms and verifying landlord identities.\n\nFor most students, University Living is recommended as the best overall option, ALMA or Revalie for premium housing, and Rentola for budget options.\n\nMonthly costs for rent typically range from CAD $700 to $1,500, with utilities around CAD $50 to $150, and internet often included.\n\nIf you want, I can help guide you on how to start your search or provide contact details for these housing options.\n\nCitations:\n- [Student Housing in Ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Student Housing in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T03:45:23.600598Z"
+      },
+      {
+        "role": "user",
+        "content": "ok what next ",
+        "timestamp": "2026-03-19T03:45:39.778283Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Next, you should apply for your study permit, arrange housing, and prepare for your orientation at the University of Ottawa. Make sure to follow the application timeline for your program, submit all required documents on time, and pay any necessary deposits. Also, if you are eligible, apply for the Ontario Health Insurance Plan (OHIP) to ensure you have healthcare coverage once you arrive. Carry your health card when accessing healthcare and keep your documents updated.\n\nCitations:\n- [University of Ottawa.pdf] — retrieved from official document chunk\n- [Ontario Health Insurance Plan.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "University of Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          },
+          {
+            "file_name": "Ontario Health Insurance Plan.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-19T03:45:46.733731Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of jobs resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-19T03:46:01.657052Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Newcomers in Ottawa can access job resources primarily through Job Bank Canada, which offers a wide range of job listings suitable for international students and permanent residents. International students can work up to 20 hours per week during academic terms and full-time during breaks, provided their study permit allows off-campus work or they have a valid co-op work permit for internships. Permanent residents have no restrictions on working hours and can apply for full-time, part-time, contract, or casual jobs.\n\nCommon job types available include retail associates, food service workers, customer service representatives, administrative assistants, IT support roles, and warehouse positions. Many student jobs pay at or slightly above Ontario's minimum wage, while skilled roles may offer higher wages.\n\nTo use Job Bank effectively, newcomers should set the location filter to Ottawa, use part-time and student-friendly filters, create an account for job alerts, and carefully read job eligibility and requirements. Networking is also important—using LinkedIn, attending career fairs, joining student communities, and connecting with professors and classmates can improve job prospects.\n\nNewcomers should avoid common mistakes such as applying without checking work-hour eligibility, using resumes not formatted to Canadian standards, ignoring entry-level roles, and falling for fake job offers. Always use trusted platforms like Job Bank and verify employers before applying.\n\nCitations:\n- [jobs_01_jobbank_canada_ottawa.pdf] — retrieved from official document chunk\n- [Job Search Guide for International Students in Canada.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "jobs_01_jobbank_canada_ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          },
+          {
+            "file_name": "Job Search Guide for International Students in Canada.pdf",
+            "title": "",
+            "url": "",
+            "category": "jobs"
+          }
+        ],
+        "timestamp": "2026-03-19T03:46:12.053779Z"
+      },
+      {
+        "role": "user",
+        "content": "What newcomer support information is available for community events in Ottawa?",
+        "timestamp": "2026-03-19T03:46:15.422522Z"
+      },
+      {
+        "role": "assistant",
+        "content": "In Ottawa, newcomers can access a variety of community events designed to support social and cultural integration. These include newcomer meetups, cultural gatherings, and professional networking sessions that help build friendships, improve communication skills, and find job opportunities. There are also free events such as workshops, clothing swaps, and public festivals that are budget-friendly and promote skill development and community engagement.\n\nSeasonal festivals like Winterlude, the Canadian Tulip Festival, and Asian Night Markets offer unique cultural experiences and opportunities to socialize. Social events such as drag shows, comedy nights, and dance parties at popular venues provide a chance to relax and meet new people.\n\nNewcomers are encouraged to attend local events regularly, use student discounts, and explore both Ottawa and nearby Gatineau to build social and professional networks. Event platforms like Eventbrite are useful for finding these activities.\n\nOverall, Ottawa’s community events offer education, culture, entertainment, and career opportunities to help newcomers enjoy a fulfilling life in the city.\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          }
+        ],
+        "timestamp": "2026-03-19T03:46:23.570567Z"
+      },
+      {
+        "role": "user",
+        "content": "please give me a detailed explanation of the community events \nmeans 2 pages of ionformation",
+        "timestamp": "2026-03-19T03:46:48.139344Z"
+      },
+      {
+        "role": "assistant",
+        "content": "I don't have enough information in the provided official documents to answer that.\n\nCitations:\n- [Housing and rentals.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T03:46:53.272756Z"
+      },
+      {
+        "role": "user",
+        "content": "ok give maximum information ",
+        "timestamp": "2026-03-19T03:47:06.071106Z"
+      },
+      {
+        "role": "assistant",
+        "content": "To study at the University of Ottawa as an international student, follow these key steps:\n\n1. **Application and Documents**: Apply through the official portal starting September 18, 2025. Prepare and upload required documents such as academic transcripts, certificates, language test results, and passport copy via uoDoc. Additional documents like a resume or portfolio may be needed. Ensure all documents not in English or French are translated. Submit documents by May 2, 2026.\n\n2. **Deadlines**: \n   - Competitive programs (e.g., Computer Science, Engineering, Nursing) have a deadline of March 1, 2026.\n   - Most other programs have a final deadline of April 1, 2026.\n   - Recommended to apply for a study permit by April 1, 2026.\n\n3. **Transfer Credits**: If you have previous education, submit transcripts and course descriptions to potentially receive transfer credits. You must complete at least 50% of your degree at uOttawa.\n\n4. **Post-Acceptance**: After acceptance, pay your admission deposit, receive your Provincial Attestation Letter (PAL), and apply for housing between June and August. Also, consider applying for the work-study program.\n\n5. **Orientation and Start**: Orientation programs take place in August-September, followed by moving into residence. Classes begin in September.\n\n6. **Tips**: Check your email regularly, prepare documents in advance, and apply only through official portals to avoid fraud.\n\nStudying in Ottawa offers world-class education, multilingual opportunities, and strong career pathways, but requires careful planning and timely submission of complete documentation.\n\nCitations:\n- [University of Ottawa.pdf] — retrieved from official document chunk\n- [study1.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "University of Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          },
+          {
+            "file_name": "study1.pdf",
+            "title": "",
+            "url": "",
+            "category": "study"
+          }
+        ],
+        "timestamp": "2026-03-19T03:47:16.920915Z"
+      },
+      {
+        "role": "user",
+        "content": "i am asking aboout the community events \nwhat the hell are you doing ",
+        "timestamp": "2026-03-19T03:47:47.035289Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Ottawa offers many community events that are great for newcomers and international students to get involved in. Some key events include:\n\n- Winterlude: A major winter festival with ice skating on the Rideau Canal, ice sculpture competitions, and snow playgrounds. It’s free and showcases Canadian winter culture.\n- Canadian Tulip Festival: Features millions of tulips and cultural performances, perfect for relaxing and social outings.\n- Asian Night Markets: Offers affordable street food, cultural performances, and shopping stalls, highlighting cultural diversity.\n- Social events like drag shows, comedy nights, and dance parties at popular venues such as The Lookout Bar & Nightclub and Beyond the Pale ByWard Taproom.\n- Community and networking events including newcomer meetups, cultural gatherings, and professional networking sessions to build friendships, improve communication, and find job opportunities.\n- Free events such as workshops, clothing swaps, and public festivals that help with skill development and community engagement.\n\nAttending these events is a great way to meet people, experience Canadian culture, and enjoy your time in Ottawa. You can also follow event platforms like Eventbrite to stay updated on local happenings.\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          }
+        ],
+        "timestamp": "2026-03-19T03:47:53.981171Z"
+      }
+    ]
+  },
+  {
+    "id": "6862fd00-be97-4f7f-9a83-f29717d80d95",
+    "title": "hi",
+    "created_at": "2026-03-19T01:19:37.188655Z",
+    "updated_at": "2026-03-19T01:32:14.282404Z",
+    "selected_category": "All",
+    "messages": [
+      {
+        "role": "user",
+        "content": "hi",
+        "timestamp": "2026-03-19T01:19:47.767505Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! Welcome to Ottawa. How can I assist you today with information about healthcare, housing, or other newcomer services?\n\nCitations:\n- [Ontario Health Insurance Plan.pdf] — retrieved from official document chunk\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Ontario Health Insurance Plan.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T01:19:53.934735Z"
+      },
+      {
+        "role": "user",
+        "content": "how are you ",
+        "timestamp": "2026-03-19T01:19:54.816377Z"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm here to help you with information and support about living in Ottawa as a newcomer. How can I assist you today?\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk\n- [Ontario Health Insurance Plan.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Ontario Health Insurance Plan.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-19T01:20:01.045274Z"
+      },
+      {
+        "role": "user",
+        "content": "i need information \ncomplete details about transportaion in ottawa",
+        "timestamp": "2026-03-19T01:20:29.533225Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Transportation in Ottawa offers several convenient and accessible options for newcomers, including students:\n\n1. **Public Transit (OC Transpo):**\n   - OC Transpo operates buses and the Light Rail Transit (LRT) system.\n   - The LRT includes the O-Train Line 1, with an East Extension opening soon to Trim Station.\n   - Fares for 2026 include:\n     - Adult single ride: $4.10 with Presto card, $4.15 cash.\n     - Monthly adult pass: $138.50.\n     - Children 10 and under ride free; pre-teens (11-12) pay $2.05.\n     - Seniors (65+) pay $3.28 per ride, with free monthly Para Transpo trips available.\n   - Payment methods include Presto cards (recommended for discounts and fare capping), O-Payment (tap with credit/debit), and cash (adult fares only).\n   - Fare capping is available: once you spend the cost of a monthly pass, additional trips are free for the month.\n   - Presto cards cost $4 and can be purchased at ticket machines, customer service centres, and some retail stores.\n   - OC Transpo is committed to safety with enhanced patrols and a new safety reporting app launching in 2026.\n\n2. **Para Transpo:**\n   - Specialized transit service for people with disabilities.\n   - Rural one-way trip fare is $11.\n   - Children 10 and under ride free.\n   - Seniors with registered Presto cards receive free monthly trips.\n\n3. **Cycling Paths:**\n   - Ottawa has a network of cycling paths, providing a safe and healthy transportation alternative.\n\n4. **Additional Benefits:**\n   - Student discounts are available.\n   - Transfers between buses and trains have extended windows (up to 105 minutes on weekdays during certain hours).\n   - Park & Ride options are available with monthly permits ranging from $31 to $70.\n\nFor more information, you can visit the OC Transpo website or contact their customer service at 613-741-4390.\n\nOverall, Ottawa’s transportation system is safe, reliable, and offers multiple options to fit different needs and budgets, making it easy for newcomers to get around the city.\n\nCitations:\n- [community events in ottawa.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Fare Guide.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "OC Transpo 2026 Fare Guide.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          }
+        ],
+        "timestamp": "2026-03-19T01:20:40.454334Z"
+      },
+      {
+        "role": "user",
+        "content": "still more detailed ",
+        "timestamp": "2026-03-19T01:21:37.208805Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Could you please clarify what topic or information you would like more detailed information about? For example, are you asking for more details on housing, transportation, or another area related to newcomer support in Ottawa? This will help me provide the most helpful and detailed answer based on the official sources.\n\nCitations:\n- [Student Housing in Ottawa.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Comprehensive Fare.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Fare Guide.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Student Housing in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "OC Transpo 2026 Comprehensive Fare.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          },
+          {
+            "file_name": "OC Transpo 2026 Fare Guide.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          }
+        ],
+        "timestamp": "2026-03-19T01:21:42.632235Z"
+      },
+      {
+        "role": "user",
+        "content": "[OC Transpo 2026 Comprehensive Fare.pdf]",
+        "timestamp": "2026-03-19T01:21:56.944487Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Starting January 1, 2026, OC Transpo fares in Ottawa will increase by 2.5%. Here are the key fare details for newcomers:\n\n**Adult Fares:**\n- Single ride: $4.10 (Presto/O-Payment), $4.15 (cash)\n- Monthly adult pass: $138.50 (Presto/O-Payment only)\n- DayPass options: 1-day $12.25, 3-day $30.75, 5-day $49.00, 7-day $58.00\n\n**Discounted Fares:**\n- Seniors (65+): $3.28 per ride; monthly pass $59.75\n  - Seniors using Para Transpo get four free trips per month with a registered Presto card.\n- Children 10 and under: free every day\n- Pre-teens (ages 11–12): $2.05 per ride\n\n**Special Passes:**\n- EquiPass and Community Pass: $1.75 per ride (unchanged)\n- Access Pass: $43.25 per month (unchanged)\n\n**Para Transpo:**\n- Rural one-way trip: $11.00\n- Children 10 and under ride free\n\n**Payment Methods:**\n- Presto card is required for discounted fares, Para Transpo credits, and fare capping.\n- Adults can pay with Presto, O-Payment (credit/debit tap), or cash.\n- Monthly passes and DayPasses are best purchased with Presto or O-Payment.\n\n**Fare Capping:**\n- Once you spend the equivalent of a monthly pass on Presto or O-Payment, additional trips are free for the rest of the month.\n\n**Additional Notes:**\n- The transfer window is temporarily extended to 105 minutes on weekdays from 3 to 6 pm.\n- Youth 18 and under ride free on weekends, after 5 pm on weekdays, public holidays, and during July and August.\n\n**Presto Card:**\n- Costs $4.00 and can be purchased at ticket machines, Rideau Centre OC Transpo Customer Service Centre, City of Ottawa Client Service Centres, and participating retailers like Shoppers Drug Mart, Loblaws, No Frills, and Real Canadian Superstores.\n- Seniors and pre-teens should register their discounts on their Presto cards at service centres or participating stores.\n\nFor more information or assistance, visit www.octranspo.com or the Rideau Centre OC Transpo Customer Service Centre.\n\nThis fare update supports improved service reliability, safety, and transit expansions including the O-Train Line 1 East Extension and preparations for the West Extension. \n\nIf you need help with specific fare types or how to use the Presto card, feel free to ask!\n\nCitations:\n- [OC Transpo 2026 Comprehensive Fare.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Fare Guide.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "OC Transpo 2026 Comprehensive Fare.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          },
+          {
+            "file_name": "OC Transpo 2026 Fare Guide.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          }
+        ],
+        "timestamp": "2026-03-19T01:22:08.394556Z"
+      },
+      {
+        "role": "user",
+        "content": "next shall we go to next topicc ",
+        "timestamp": "2026-03-19T01:32:08.856033Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure! Please let me know which topic you would like to discuss next, or if you want me to suggest one based on your interests as a newcomer in Ottawa.\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Housing and rentals.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Fare Guide.pdf] — retrieved from official document chunk\n- [community events in ottawa.pdf] — retrieved from official document chunk\n- [OC Transpo 2026 Comprehensive Fare.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Housing and rentals.pdf",
+            "title": "",
+            "url": "",
+            "category": "housing"
+          },
+          {
+            "file_name": "OC Transpo 2026 Fare Guide.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          },
+          {
+            "file_name": "community events in ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "community_events"
+          },
+          {
+            "file_name": "OC Transpo 2026 Comprehensive Fare.pdf",
+            "title": "",
+            "url": "",
+            "category": "transportation"
+          }
+        ],
+        "timestamp": "2026-03-19T01:32:14.282388Z"
+      }
+    ]
+  },
+  {
+    "id": "8735656b-d979-4313-a929-9fa51af2ee96",
+    "title": "hello",
+    "created_at": "2026-03-19T01:17:30.160379Z",
+    "updated_at": "2026-03-19T03:27:52.216527Z",
+    "selected_category": "All",
+    "messages": [
+      {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2026-03-19T01:17:42.741936Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! Welcome to Ottawa. How can I assist you today with information about healthcare or other newcomer services in Ottawa?\n\nCitations:\n- [Healtcare.pdf] — retrieved from official document chunk\n- [Healthcare Services in Ottawa.pdf] — retrieved from official document chunk\n- [Ontario Health Insurance Plan.pdf] — retrieved from official document chunk",
+        "sources": [
+          {
+            "file_name": "Healtcare.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Healthcare Services in Ottawa.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          },
+          {
+            "file_name": "Ontario Health Insurance Plan.pdf",
+            "title": "",
+            "url": "",
+            "category": "healthcare"
+          }
+        ],
+        "timestamp": "2026-03-19T01:17:49.162015Z"
+      },
+      {
+        "role": "user",
+        "content": "Give me a summary of housing resources for newcomers in Ottawa.",
+        "timestamp": "2026-03-19T03:27:25.455673Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The chatbot service is currently unavailable. Please try again in a moment.",
+        "sources": [],
+        "timestamp": "2026-03-19T03:27:27.514994Z"
+      },
+      {
+        "role": "user",
+        "content": "What newcomer support information is available for housing in Ottawa?",
+        "timestamp": "2026-03-19T03:27:50.185567Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The chatbot service is currently unavailable. Please try again in a moment.",
+        "sources": [],
+        "timestamp": "2026-03-19T03:27:52.216510Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+﻿// Optional: component placeholder\n
